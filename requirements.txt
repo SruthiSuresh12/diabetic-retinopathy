@@ -1,0 +1,13 @@
+# Core scientific libraries
+numpy==1.27.6
+pandas==2.1.1
+opencv-python==4.9.0.86
+
+# TensorFlow & Keras
+tensorflow==2.15.0
+
+# Kaggle API for dataset download
+kaggle==1.5.16
+
+# Optional: for progress bars and nicer CLI experience
+tqdm==4.66.1
