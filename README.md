@@ -5,7 +5,7 @@ This repository provides two workflows for training a deep learning model to cla
 ---
 
 ## 📂 Repository Structure
-
+```
 diabetic-retinopathy/
 │
 ├── sample.zip
@@ -13,7 +13,9 @@ diabetic-retinopathy/
 ├── sample.ipynb # quick test using Kaggle's sample.zip
 ├── full_size.ipynb # full workflow using train/test images from Kaggle
 ├── README.md
+├── requirements.txt
 
+```
 ---
 
 ## 🚀 Workflows
@@ -42,6 +44,26 @@ diabetic-retinopathy/
   3. Trains a **ResNet50V2** model with **Focal Loss** to address class imbalance.
   4. Evaluates with **Accuracy, AUC, and Recall**.
   5. Saves the trained model as `diabetic_retinopathy_model.h5`.
+
+---
+
+## 🛠 Requirements
+
+All necessary Python dependencies for running the workflows are listed in **`requirements.txt`**. To set up the environment, use:
+
+```
+pip install -r requirements.txt
+```
+
+### Key Dependencies:
+
+* **TensorFlow & Keras** – for building and training the deep learning model.
+* **OpenCV** – for image preprocessing (CLAHE, resizing, green channel extraction).
+* **Pandas & NumPy** – for data manipulation and numerical operations.
+* **Kaggle API** – for downloading the full dataset programmatically.
+* **tqdm (optional)** – for progress bars during processing.
+
+> ⚠️ Ensure you are using compatible versions of these libraries, as listed in `requirements.txt`, to avoid runtime errors.
 
 ---
 
